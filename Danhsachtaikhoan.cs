@@ -28,7 +28,7 @@ namespace QLKTX
         Danhsachtaikhoan()
         {
             listtaikhoan = new List<TaiKhoan>();
-            listtaikhoan.Add(new TaiKhoan("nguyenhuuhung", "12345"));
+            listtaikhoan.Add(new TaiKhoan("dangnam", "12345"));
         }
     }
 }

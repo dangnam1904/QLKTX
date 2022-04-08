@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QLKTX
 {
-    public partial class Form2 : Form
+    public partial class Fr_Main : Form
     {
         
-        public Form2()
+        public Fr_Main()
         {
             InitializeComponent();
         }

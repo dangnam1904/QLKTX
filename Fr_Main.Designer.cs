@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form2
+    partial class Fr_Main
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace QLKTX
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fr_Main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnspquanli = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

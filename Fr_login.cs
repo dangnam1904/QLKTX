@@ -36,7 +36,7 @@ namespace QLKTX
         {
             if (kiemtradangnhap(txtTK.Text, txtMK.Text))
             {
-                Form2 add = new Form2();
+                Fr_Main add = new Fr_Main();
                 add.Show();
                 xoatrang();
                 this.Hide();
