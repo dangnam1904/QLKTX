@@ -10,11 +10,11 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace QLKTX
 {
-    public partial class Form14 : Form
+    public partial class fr_chi_phiphong : Form
     {
         Database dtbasee = new Database();
         int tiennha, tiendien, tiennuoc, tienvesinh, tienphat;
-        public Form14()
+        public fr_chi_phiphong()
         {
             InitializeComponent();
         }

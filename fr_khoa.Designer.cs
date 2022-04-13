@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form5
+    partial class fr_khoa
     {
         /// <summary>
         /// Required designer variable.

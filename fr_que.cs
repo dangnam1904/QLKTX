@@ -10,10 +10,10 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace QLKTX
 {
-    public partial class Form7 : Form
+    public partial class fr_que : Form
     {
         Database dtbase = new Database();
-        public Form7()
+        public fr_que()
         {
             InitializeComponent();
         }

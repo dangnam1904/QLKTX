@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 
 namespace QLKTX
 {
-    public partial class Form12 : Form
+    public partial class fr_quanly_thietbi : Form
     {
         Database Database = new Database();
-        public Form12()
+        public fr_quanly_thietbi()
         {
             InitializeComponent();
         }

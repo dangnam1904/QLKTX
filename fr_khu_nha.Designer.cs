@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form9
+    partial class fr_khu_nha
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace QLKTX
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvkhunha = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,11 +42,10 @@ namespace QLKTX
             this.btnthem = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvkhunha = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvkhunha)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvkhunha)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -58,6 +58,16 @@ namespace QLKTX
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DANH SÁCH KHU NHÀ";
+            // 
+            // dgvkhunha
+            // 
+            this.dgvkhunha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvkhunha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvkhunha.Location = new System.Drawing.Point(3, 16);
+            this.dgvkhunha.Name = "dgvkhunha";
+            this.dgvkhunha.Size = new System.Drawing.Size(286, 300);
+            this.dgvkhunha.TabIndex = 0;
+            this.dgvkhunha.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvkhunha_CellClick);
             // 
             // groupBox1
             // 
@@ -172,17 +182,7 @@ namespace QLKTX
             this.panel1.Size = new System.Drawing.Size(302, 40);
             this.panel1.TabIndex = 2;
             // 
-            // dgvkhunha
-            // 
-            this.dgvkhunha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvkhunha.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvkhunha.Location = new System.Drawing.Point(3, 16);
-            this.dgvkhunha.Name = "dgvkhunha";
-            this.dgvkhunha.Size = new System.Drawing.Size(286, 300);
-            this.dgvkhunha.TabIndex = 0;
-            this.dgvkhunha.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvkhunha_CellClick);
-            // 
-            // Form9
+            // fr_khu_nha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,15 +191,15 @@ namespace QLKTX
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
-            this.Name = "Form9";
+            this.Name = "fr_khu_nha";
             this.Text = "Khu Nhà";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvkhunha)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvkhunha)).EndInit();
             this.ResumeLayout(false);
 
         }

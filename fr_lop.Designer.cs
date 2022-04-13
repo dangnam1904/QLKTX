@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form6
+    partial class fr_lop
     {
         /// <summary>
         /// Required designer variable.

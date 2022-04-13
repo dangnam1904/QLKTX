@@ -32,73 +32,73 @@ namespace QLKTX
 
         private void thôngTinSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 add = new Form4();
+            fr_qly_sv add = new fr_qly_sv();
             add.Show();
         }
 
         private void tsmnLienhe_Click(object sender, EventArgs e)
         {
-            Form3 add = new Form3();
+            fr_lien_he add = new fr_lien_he();
             add.Show();
         }
 
         private void khoaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form5 add = new Form5();
+            fr_khoa add = new fr_khoa();
             add.Show();
         }
 
         private void lớpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form6 add = new Form6();
+            fr_lop add = new fr_lop();
             add.Show();
         }
 
         private void quêToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form7 add = new Form7();
+            fr_que add = new fr_que();
             add.Show();
         }
 
         private void thiếtBịToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form8 add = new Form8();
+            fr_thiet_bi add = new fr_thiet_bi();
             add.Show();
         }
 
         private void khuNhàToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form9 add = new Form9();
+            fr_khu_nha add = new fr_khu_nha();
             add.Show();
         }
 
         private void quảnLýPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form10 add = new Form10();
+            fr_phong add = new fr_phong();
             add.Show();
         }
 
         private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form11 add = new Form11();
+            fr_thuephong add = new fr_thuephong();
             add.Show();
         }
 
         private void quảnLýThiếtBịToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form12 add = new Form12();
+            fr_quanly_thietbi add = new fr_quanly_thietbi();
             add.Show();
         }
 
         private void quảnLýToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Form13 add = new Form13();
+            fr_traphong add = new fr_traphong();
             add.Show();
         }
 
         private void chiPhíPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form14 add = new Form14();
+            fr_chi_phiphong add = new fr_chi_phiphong();
             add.Show();
         }
 

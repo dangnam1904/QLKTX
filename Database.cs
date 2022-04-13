@@ -14,14 +14,14 @@ namespace QLKTX
             "Integrated Security=True";
         SqlConnection sqlConnect = null;
         //Phương thức mở kết nối
-        void OpenConnect()
+        public void OpenConnect()
         {
             sqlConnect = new SqlConnection(strConnect);
             if (sqlConnect.State != ConnectionState.Open)
                 sqlConnect.Open();
         }
         //Phương thức đóng kết nối
-        void CloseConnect()
+        public void CloseConnect()
         {
             if (sqlConnect.State != ConnectionState.Closed)
             {

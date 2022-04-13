@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace QLKTX
 {
-    public partial class Form4 : Form
+    public partial class fr_qly_sv : Form
     {
         Database database = new Database();
         string imageName;
-        public Form4()
+        public fr_qly_sv()
         {
             InitializeComponent();
         }

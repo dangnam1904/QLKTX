@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form8
+    partial class fr_thiet_bi
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@ namespace QLKTX
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvthietbi = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,10 +40,9 @@ namespace QLKTX
             this.btnthoat = new System.Windows.Forms.Button();
             this.btnsua = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
-            this.dgvthietbi = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvthietbi)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,6 +55,16 @@ namespace QLKTX
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DANH SÁCH THIẾT BỊ";
+            // 
+            // dgvthietbi
+            // 
+            this.dgvthietbi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvthietbi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvthietbi.Location = new System.Drawing.Point(3, 16);
+            this.dgvthietbi.Name = "dgvthietbi";
+            this.dgvthietbi.Size = new System.Drawing.Size(309, 302);
+            this.dgvthietbi.TabIndex = 0;
+            this.dgvthietbi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvthietbi_CellClick);
             // 
             // groupBox2
             // 
@@ -150,17 +160,7 @@ namespace QLKTX
             this.btnthem.UseVisualStyleBackColor = true;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
-            // dgvthietbi
-            // 
-            this.dgvthietbi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvthietbi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvthietbi.Location = new System.Drawing.Point(3, 16);
-            this.dgvthietbi.Name = "dgvthietbi";
-            this.dgvthietbi.Size = new System.Drawing.Size(309, 302);
-            this.dgvthietbi.TabIndex = 0;
-            this.dgvthietbi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvthietbi_CellClick);
-            // 
-            // Form8
+            // fr_thiet_bi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,13 +168,13 @@ namespace QLKTX
             this.ClientSize = new System.Drawing.Size(620, 321);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form8";
+            this.Name = "fr_thiet_bi";
             this.Text = "THIẾT BỊ";
             this.Load += new System.EventHandler(this.Form8_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvthietbi)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvthietbi)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace QLKTX
 {
-    public partial class Form5 : Form
+    public partial class fr_khoa : Form
     {
-        public Form5()
+        public fr_khoa()
         {
             InitializeComponent();
         }

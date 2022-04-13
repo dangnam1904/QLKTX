@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form4
+    partial class fr_qly_sv
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@ namespace QLKTX
             this.btnthemmoi = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnanh = new System.Windows.Forms.Button();
+            this.picanh = new System.Windows.Forms.PictureBox();
             this.btnhuy = new System.Windows.Forms.Button();
             this.btnluu = new System.Windows.Forms.Button();
             this.cbxmakhoa = new System.Windows.Forms.ComboBox();
@@ -64,14 +65,13 @@ namespace QLKTX
             this.btntimkiem = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dgvsinhvien = new System.Windows.Forms.DataGridView();
-            this.picanh = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picanh)).BeginInit();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsinhvien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picanh)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -169,6 +169,21 @@ namespace QLKTX
             this.btnanh.Text = "Ảnh";
             this.btnanh.UseVisualStyleBackColor = true;
             this.btnanh.Click += new System.EventHandler(this.btnanh_Click);
+            // 
+            // picanh
+            // 
+            this.picanh.BackColor = System.Drawing.Color.Honeydew;
+            this.picanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picanh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picanh.Enabled = false;
+            this.picanh.ErrorImage = null;
+            this.picanh.InitialImage = null;
+            this.picanh.Location = new System.Drawing.Point(246, 22);
+            this.picanh.Name = "picanh";
+            this.picanh.Size = new System.Drawing.Size(106, 122);
+            this.picanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picanh.TabIndex = 17;
+            this.picanh.TabStop = false;
             // 
             // btnhuy
             // 
@@ -422,22 +437,7 @@ namespace QLKTX
             this.dgvsinhvien.TabIndex = 7;
             this.dgvsinhvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // picanh
-            // 
-            this.picanh.BackColor = System.Drawing.Color.Honeydew;
-            this.picanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picanh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picanh.Enabled = false;
-            this.picanh.ErrorImage = null;
-            this.picanh.InitialImage = null;
-            this.picanh.Location = new System.Drawing.Point(246, 22);
-            this.picanh.Name = "picanh";
-            this.picanh.Size = new System.Drawing.Size(106, 122);
-            this.picanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picanh.TabIndex = 17;
-            this.picanh.TabStop = false;
-            // 
-            // Form4
+            // fr_qly_sv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -448,19 +448,19 @@ namespace QLKTX
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form4";
+            this.Name = "fr_qly_sv";
             this.Text = "Quản Lí Sinh Viên";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picanh)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsinhvien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picanh)).EndInit();
             this.ResumeLayout(false);
 
         }

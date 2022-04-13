@@ -42,6 +42,7 @@ namespace QLKTX
             this.txtMK = new System.Windows.Forms.TextBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDN = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@ namespace QLKTX
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -61,7 +63,7 @@ namespace QLKTX
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(436, 233);
+            this.panel1.Size = new System.Drawing.Size(436, 332);
             this.panel1.TabIndex = 0;
             // 
             // checkBox1
@@ -152,12 +154,22 @@ namespace QLKTX
             this.btnDN.UseVisualStyleBackColor = false;
             this.btnDN.Click += new System.EventHandler(this.btnDN_Click_1);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(138, 284);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "label4";
+            // 
             // fr_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(436, 233);
+            this.ClientSize = new System.Drawing.Size(436, 332);
             this.Controls.Add(this.panel1);
             this.Name = "fr_login";
             this.Text = "Đăng Nhập";
@@ -180,6 +192,7 @@ namespace QLKTX
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnDN;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

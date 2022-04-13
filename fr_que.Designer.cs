@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form7
+    partial class fr_que
     {
         /// <summary>
         /// Required designer variable.
@@ -175,7 +175,7 @@ namespace QLKTX
             this.dgvque.TabIndex = 3;
             this.dgvque.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvque_CellClick);
             // 
-            // Form7
+            // fr_que
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +184,7 @@ namespace QLKTX
             this.Controls.Add(this.dgvque);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form7";
+            this.Name = "fr_que";
             this.Text = "Quê";
             this.Load += new System.EventHandler(this.Form7_Load);
             this.panel1.ResumeLayout(false);

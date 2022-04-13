@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QLKTX
 {
-    public partial class Form6 : Form
+    public partial class fr_lop : Form
     {
         Database dtbase = new Database();
-        public Form6()
+        public fr_lop()
         {
             InitializeComponent();
         }

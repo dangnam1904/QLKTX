@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form14
+    partial class fr_chi_phiphong
     {
         /// <summary>
         /// Required designer variable.

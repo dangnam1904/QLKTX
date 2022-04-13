@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form13
+    partial class fr_traphong
     {
         /// <summary>
         /// Required designer variable.

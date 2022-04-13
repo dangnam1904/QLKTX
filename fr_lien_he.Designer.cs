@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form3
+    partial class fr_lien_he
     {
         /// <summary>
         /// Required designer variable.

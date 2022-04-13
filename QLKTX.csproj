@@ -53,35 +53,35 @@
     <Compile Include="Fr_login.Designer.cs">
       <DependentUpon>Fr_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form10.cs">
+    <Compile Include="fr_phong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="fr_phong.Designer.cs">
+      <DependentUpon>fr_phong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form11.cs">
+    <Compile Include="fr_thuephong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.cs">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <Compile Include="fr_thuephong.Designer.cs">
+      <DependentUpon>fr_thuephong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form12.cs">
+    <Compile Include="fr_quanly_thietbi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form12.Designer.cs">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <Compile Include="fr_quanly_thietbi.Designer.cs">
+      <DependentUpon>fr_quanly_thietbi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form13.cs">
+    <Compile Include="fr_traphong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="fr_traphong.Designer.cs">
+      <DependentUpon>fr_traphong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form14.cs">
+    <Compile Include="fr_chi_phiphong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form14.Designer.cs">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <Compile Include="fr_chi_phiphong.Designer.cs">
+      <DependentUpon>fr_chi_phiphong.cs</DependentUpon>
     </Compile>
     <Compile Include="Fr_Main.cs">
       <SubType>Form</SubType>
@@ -89,49 +89,49 @@
     <Compile Include="Fr_Main.Designer.cs">
       <DependentUpon>Fr_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danhsachtaikhoan.cs" />
-    <Compile Include="Form3.cs">
+    <Compile Include="fr_lien_he.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="fr_lien_he.Designer.cs">
+      <DependentUpon>fr_lien_he.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="fr_qly_sv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="fr_qly_sv.Designer.cs">
+      <DependentUpon>fr_qly_sv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="fr_khoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="fr_khoa.Designer.cs">
+      <DependentUpon>fr_khoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="fr_lop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="fr_lop.Designer.cs">
+      <DependentUpon>fr_lop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="fr_que.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="fr_que.Designer.cs">
+      <DependentUpon>fr_que.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
+    <Compile Include="fr_thiet_bi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="fr_thiet_bi.Designer.cs">
+      <DependentUpon>fr_thiet_bi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="fr_khu_nha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="fr_khu_nha.Designer.cs">
+      <DependentUpon>fr_khu_nha.cs</DependentUpon>
     </Compile>
+    <Compile Include="FunctionMD5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -139,48 +139,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="TaiKhoan.cs" />
     <EmbeddedResource Include="Fr_login.resx">
       <DependentUpon>Fr_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="fr_phong.resx">
+      <DependentUpon>fr_phong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form11.resx">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <EmbeddedResource Include="fr_thuephong.resx">
+      <DependentUpon>fr_thuephong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form12.resx">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <EmbeddedResource Include="fr_quanly_thietbi.resx">
+      <DependentUpon>fr_quanly_thietbi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="fr_traphong.resx">
+      <DependentUpon>fr_traphong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form14.resx">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <EmbeddedResource Include="fr_chi_phiphong.resx">
+      <DependentUpon>fr_chi_phiphong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fr_Main.resx">
       <DependentUpon>Fr_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="fr_lien_he.resx">
+      <DependentUpon>fr_lien_he.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="fr_qly_sv.resx">
+      <DependentUpon>fr_qly_sv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="fr_khoa.resx">
+      <DependentUpon>fr_khoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="fr_lop.resx">
+      <DependentUpon>fr_lop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="fr_que.resx">
+      <DependentUpon>fr_que.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="fr_thiet_bi.resx">
+      <DependentUpon>fr_thiet_bi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="fr_khu_nha.resx">
+      <DependentUpon>fr_khu_nha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

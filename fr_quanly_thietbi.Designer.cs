@@ -1,7 +1,7 @@
 ﻿
 namespace QLKTX
 {
-    partial class Form12
+    partial class fr_quanly_thietbi
     {
         /// <summary>
         /// Required designer variable.

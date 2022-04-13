@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLKTX
 {
-    public partial class Form3 : Form
+    public partial class fr_lien_he : Form
     {
-        public Form3()
+        public fr_lien_he()
         {
             InitializeComponent();
         }
