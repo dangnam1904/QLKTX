@@ -12,7 +12,7 @@ namespace QLKTX
 {
     public partial class Fr_Main : Form
     {
-        
+        int id_rold = fr_login.id_rold;
         public Fr_Main()
         {
             InitializeComponent();
@@ -125,6 +125,29 @@ namespace QLKTX
         {
             hp = true;
             timer1.Start();
+            if(id_rold == 3) //tức là tk admin
+            {
+                quảnLýThiếtBịToolStripMenuItem.Visible= false;
+                quảnLýThuePhongStripMenuItem.Visible=false;
+                quảnLýtra_phongtripMenuItem1.Visible=false;
+                tạoTàiKhoảnToolStripMenuItem.Visible=false;
+            }
+            if(id_rold == 2)
+            {
+                tạoTàiKhoảnToolStripMenuItem.Visible = false;
+            }
+            if (id_rold == 1)
+            {
+                tạoTàiKhoảnToolStripMenuItem.Visible = true;
+            }
+            
+        }
+
+        private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fr_dangky fr_dky= new fr_dangky();
+            fr_dky.Show();
+            
         }
     }
 }

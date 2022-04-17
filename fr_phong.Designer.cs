@@ -268,6 +268,7 @@ namespace QLKTX
             this.cbxloaiphong.Name = "cbxloaiphong";
             this.cbxloaiphong.Size = new System.Drawing.Size(145, 24);
             this.cbxloaiphong.TabIndex = 41;
+            this.cbxloaiphong.SelectedIndexChanged += new System.EventHandler(this.cbxloaiphong_SelectedIndexChanged);
             // 
             // cbxmanha
             // 
@@ -361,7 +362,7 @@ namespace QLKTX
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // Form10
+            // fr_phong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -369,7 +370,7 @@ namespace QLKTX
             this.ClientSize = new System.Drawing.Size(811, 441);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form10";
+            this.Name = "fr_phong";
             this.Text = "QUẢN LÝ PHÒNG";
             this.Load += new System.EventHandler(this.Form10_Load);
             this.groupBox2.ResumeLayout(false);

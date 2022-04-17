@@ -177,5 +177,10 @@ namespace QLKTX
               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
         }
+
+        private void cbxloaiphong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

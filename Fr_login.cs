@@ -14,7 +14,7 @@ namespace QLKTX
 
     {
         Database dt = new Database();
-       
+        public static int id_rold=0;
         public fr_login()
         {
             InitializeComponent();
@@ -28,9 +28,24 @@ namespace QLKTX
        
         private void btnDN_Click_1(object sender, EventArgs e)
         {
-             string pass= FunctionMD5.Create_md5(txtTK.Text);
-             DataTable data= dt.DataReader("select * from TaiKhoan where username=N'" + txtTK.Text.Trim() + "' and password=N'" + pass + "'");
-            if(data.Rows.Count > 0)
+            ktra_login();
+            if (id_rold == 1)
+            {
+                MessageBox.Show("Đăng nhập thành công");
+                Fr_Main add = new Fr_Main();
+                add.Show();
+                xoatrang();
+                this.Hide();
+            }
+            else if (id_rold == 2)
+            {
+                MessageBox.Show("Đăng nhập thành công");
+                Fr_Main add = new Fr_Main();
+                add.Show();
+                xoatrang();
+                this.Hide();
+            }
+            else if (id_rold == 3)
             {
                 MessageBox.Show("Đăng nhập thành công");
                 Fr_Main add = new Fr_Main();
@@ -40,10 +55,23 @@ namespace QLKTX
             }
             else
             {
-                MessageBox.Show("Thông tin tài khoản chưa chính xác");
-                txtTK.Focus();
+                MessageBox.Show("Tài khoản hoặc mật khẩu sai");
             }
-           
+
+
+        }
+
+        private int ktra_login()
+        {
+            string pass = FunctionMD5.Create_md5(txtMK.Text);
+            DataTable data = dt.DataReader("select * from TaiKhoan where username=N'" + txtTK.Text.Trim() + "' and password=N'" + pass + "' ");
+
+            foreach (DataRow data1 in data.Rows)
+            {
+                id_rold = int.Parse(data1["id_rold"].ToString());
+
+            }
+            return id_rold;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -73,7 +101,11 @@ namespace QLKTX
                 Application.Exit();
         }
 
-
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            fr_dangky fr_dy= new fr_dangky();
+            fr_dy.Show();
+        }
     }
 }   
 
