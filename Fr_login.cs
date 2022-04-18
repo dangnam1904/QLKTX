@@ -15,6 +15,7 @@ namespace QLKTX
     {
         Database dt = new Database();
         public static int id_rold=0;
+        public static string username = "";
         public fr_login()
         {
             InitializeComponent();
@@ -69,7 +70,7 @@ namespace QLKTX
             foreach (DataRow data1 in data.Rows)
             {
                 id_rold = int.Parse(data1["id_rold"].ToString());
-
+                username = data1["username"].ToString();
             }
             return id_rold;
         }

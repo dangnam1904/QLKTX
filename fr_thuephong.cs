@@ -20,9 +20,9 @@ namespace QLKTX
         private void Form11_Load(object sender, EventArgs e)
         {
             //nạp dữ liệu vào combobox
-            cbxmsv.DataSource = Database.DataReader("Select MaSinhVien from tblSinhVien");
-            cbxmsv.ValueMember = "MaSinhVien";
-            cbxmsv.DisplayMember = "MaSinhVien";
+            cbxmsv.DataSource = Database.DataReader("Select MaSV from tblSinhVien");
+            cbxmsv.ValueMember = "MaSV";
+            cbxmsv.DisplayMember = "MaSV";
             cbxmsv.Text = "";
             
             cbxmaphong.DataSource = Database.DataReader("Select MaPhong from tblPhong");
@@ -108,7 +108,7 @@ namespace QLKTX
             //Tìm theo mã sinh viên
             if (txtTKMSV.Text.Trim() != "")
             {
-                sql += " and MaSinhVien like N'%" + txtTKMSV.Text + "%'";
+                sql += " and MaSV like N'%" + txtTKMSV.Text + "%'";
             }
             //Load dữ liệu tìm được lên dataGridView
             dgvsvphong.DataSource = Database.DataReader(sql);
@@ -179,7 +179,7 @@ namespace QLKTX
                     errorProvider1.Clear();
                 }
                 //Insert vao CSDL
-                sql = "INSERT INTO tblSinhVienPhong(MaSoThue, MaSinhVien, MaPhong, NgayBatDau, NgayKetThuc, GhiChu) VALUES(";
+                sql = "INSERT INTO tblSinhVienPhong(MaSoThue, MaSV, MaPhong, NgayBatDau, NgayKetThuc, GhiChu) VALUES(";
                 sql += "'" + txtMST.Text + "','" + cbxmsv.SelectedValue.ToString() + "','" + cbxmaphong.SelectedValue.ToString() + "','" + dtpbatdau.Value.ToString("MM/dd/yyyy") + "'" +
                     ",'" + dtpKetthuc.Value.ToString("MM/dd/yyyy") + "',N'" + txtghichu.Text + "')";
                 
@@ -187,7 +187,7 @@ namespace QLKTX
             //Nếu nút Sửa enable=true thì thực hiện cập nhật dữ liệu
             if (btnsua.Enabled == true)
             {
-                sql = "Update tblSinhVienPhong SET MaSinhVien ='" + cbxmsv.SelectedValue.ToString() + "',MaPhong='" + cbxmaphong.SelectedValue.ToString() + "'" +
+                sql = "Update tblSinhVienPhong SET MaSV ='" + cbxmsv.SelectedValue.ToString() + "',MaPhong='" + cbxmaphong.SelectedValue.ToString() + "'" +
                    ",NgayBatDau='" + dtpbatdau.Value.ToString("MM/dd/yyyy") + "',NgayKetThuc='" + dtpKetthuc.Value.ToString("MM/dd/yyyy") + "'," +
                    "GhiChu=N'" + txtghichu.Text + "' Where MaSoThue='" + txtMST.Text + "'";
                     //cập nhật data

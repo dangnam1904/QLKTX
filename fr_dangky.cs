@@ -85,8 +85,7 @@ namespace QLKTX
             MessageBox.Show("Thêm thành công", "Thông báo");
             fr_login fr_login = new fr_login();
             fr_login.Show();
-
-
+            
             if (id_rold == 1)
             {
                 label_loaitk.Visible = true;
@@ -120,20 +119,20 @@ namespace QLKTX
                 }
 
 
-               
-
             }
-           
-            
-           
             
         }
 
         private void fr_dangky_Load(object sender, EventArgs e)
         {
+            if(id_rold == 1)
+            {
+                label_loaitk.Visible = true;
+                cb_loaitk.Visible = true;
+            }
             load_data_to_cbox();
             cb_loaitk.SelectedIndex = 0;
-            
+
         }
 
         private void check_box_nam_CheckedChanged(object sender, EventArgs e)

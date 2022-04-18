@@ -52,6 +52,7 @@ namespace QLKTX
             this.tạoTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblchu = new System.Windows.Forms.Label();
+            this.label_xinchao = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,21 +200,21 @@ namespace QLKTX
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // tạoTàiKhoảnToolStripMenuItem
             // 
             this.tạoTàiKhoảnToolStripMenuItem.Name = "tạoTàiKhoảnToolStripMenuItem";
-            this.tạoTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tạoTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.tạoTàiKhoảnToolStripMenuItem.Text = "Tạo Tài khoản";
             this.tạoTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.tạoTàiKhoảnToolStripMenuItem_Click);
             // 
@@ -234,6 +235,17 @@ namespace QLKTX
             this.lblchu.TabIndex = 1;
             this.lblchu.Text = "QUẢN LÝ KÍ TÚC XÁ SINH VIÊN";
             // 
+            // label_xinchao
+            // 
+            this.label_xinchao.AutoSize = true;
+            this.label_xinchao.BackColor = System.Drawing.Color.White;
+            this.label_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_xinchao.Location = new System.Drawing.Point(490, 5);
+            this.label_xinchao.Name = "label_xinchao";
+            this.label_xinchao.Size = new System.Drawing.Size(73, 17);
+            this.label_xinchao.TabIndex = 2;
+            this.label_xinchao.Text = "Xin Chào";
+            // 
             // Fr_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +254,7 @@ namespace QLKTX
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 389);
+            this.Controls.Add(this.label_xinchao);
             this.Controls.Add(this.lblchu);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -281,5 +294,6 @@ namespace QLKTX
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblchu;
         private System.Windows.Forms.ToolStripMenuItem tạoTàiKhoảnToolStripMenuItem;
+        private System.Windows.Forms.Label label_xinchao;
     }
 }

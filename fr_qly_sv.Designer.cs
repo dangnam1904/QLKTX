@@ -65,6 +65,7 @@ namespace QLKTX
             this.btntimkiem = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dgvsinhvien = new System.Windows.Forms.DataGridView();
+            this.bt_refesh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picanh)).BeginInit();
@@ -76,6 +77,7 @@ namespace QLKTX
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bt_refesh);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnxoa);
             this.panel1.Controls.Add(this.btnsua);
@@ -89,7 +91,7 @@ namespace QLKTX
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(659, 6);
+            this.button1.Location = new System.Drawing.Point(752, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 32);
             this.button1.TabIndex = 16;
@@ -339,7 +341,6 @@ namespace QLKTX
             this.txtMSV.Name = "txtMSV";
             this.txtMSV.Size = new System.Drawing.Size(146, 23);
             this.txtMSV.TabIndex = 2;
-            this.txtMSV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMSV_KeyPress);
             // 
             // panel2
             // 
@@ -437,6 +438,17 @@ namespace QLKTX
             this.dgvsinhvien.TabIndex = 7;
             this.dgvsinhvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // bt_refesh
+            // 
+            this.bt_refesh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_refesh.Location = new System.Drawing.Point(610, 6);
+            this.bt_refesh.Name = "bt_refesh";
+            this.bt_refesh.Size = new System.Drawing.Size(76, 32);
+            this.bt_refesh.TabIndex = 17;
+            this.bt_refesh.Text = "Refresh";
+            this.bt_refesh.UseVisualStyleBackColor = true;
+            this.bt_refesh.Click += new System.EventHandler(this.bt_refesh_Click);
+            // 
             // fr_qly_sv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -501,5 +513,6 @@ namespace QLKTX
         private System.Windows.Forms.DataGridView dgvsinhvien;
         private System.Windows.Forms.PictureBox picanh;
         private System.Windows.Forms.Button btnanh;
+        private System.Windows.Forms.Button bt_refesh;
     }
 }

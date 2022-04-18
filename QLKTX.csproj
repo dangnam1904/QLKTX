@@ -217,7 +217,9 @@
   <ItemGroup>
     <None Include="Resources\257536464_244243767694010_1524361552359720052_n.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Image\AnhSV\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Image\AnhSV\1.jpg" />
     <Content Include="bin\Debug\Image\AnhSV\10.jpg" />

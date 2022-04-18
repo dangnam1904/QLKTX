@@ -13,6 +13,7 @@ namespace QLKTX
     public partial class Fr_Main : Form
     {
         int id_rold = fr_login.id_rold;
+        string username=fr_login.username;
         public Fr_Main()
         {
             InitializeComponent();
@@ -140,13 +141,16 @@ namespace QLKTX
             {
                 tạoTàiKhoảnToolStripMenuItem.Visible = true;
             }
-            
+            label_xinchao.Text = "Xin chào : " + username;
         }
 
         private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fr_dangky fr_dky= new fr_dangky();
-            fr_dky.Show();
+            if (id_rold == 1)
+            {
+                fr_dangky fr_dky = new fr_dangky();
+                fr_dky.Show();
+            }
             
         }
     }

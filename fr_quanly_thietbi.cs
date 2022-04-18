@@ -112,6 +112,8 @@ namespace QLKTX
                 MessageBox.Show("Bạn phải nhập đủ dữ liệu");
                 return;
             }
+
+            // chưa check khóa
             //Insert CSDL
              Database.DataChange("Insert into tblThietBiPhong Values('" + cbxmaphong.SelectedValue.ToString() + "', " +
               "'" + cbxmathietbi.SelectedValue.ToString() + "','" + txtSL.Text + "'," +

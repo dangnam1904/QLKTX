@@ -142,11 +142,11 @@ namespace QLKTX
             btnsua.Enabled = false;
             btnxoa.Enabled = false;
             //Viet cau lenh SQL cho tim kiem 
-            string sql = "SELECT * FROM tblSinhVien where MaSinhVien is not null ";
+            string sql = "SELECT * FROM tblSinhVien where MaSV is not null ";
             //Tim theo mã sinh viên 
             if (txtTKMSV.Text.Trim() != "")
             {
-                sql += " and MaSinhVien like '%" + txtTKMSV.Text + "%'";
+                sql += " and MaSV like '%" + txtTKMSV.Text + "%'";
             }
             //Tìm theo tên sinh viên
             if (txtTKHoten.Text.Trim() != "")
@@ -186,7 +186,7 @@ namespace QLKTX
             if (MessageBox.Show("Bạn có muốn xoá không?", "Thông Báo"
                , MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                database.DataChange("Delete tblSinhVien Where MaSinhVien = '" + txtMSV.Text + "'");
+                database.DataChange("Delete tblSinhVien Where MaSV = '" + txtMSV.Text + "'");
                 btnsua.Enabled = false;
                 btnthemmoi.Enabled = true;
                 btnxoa.Enabled = false;
@@ -242,7 +242,7 @@ namespace QLKTX
                 }
                 else
                 {  //Kiểm tra xem mã sinh viên đã tồn tại chưa đẻ tránh việc  insert  mới  bị  lỗi  
-                    sql = "Select  *  From tblSinhVien Where MaSinhVien  = '" + txtMSV.Text + "'";
+                    sql = "Select  *  From tblSinhVien Where MaSV  = '" + txtMSV.Text + "'";
                     DataTable dtSP = database.DataReader(sql);
                     if (dtSP.Rows.Count > 0)
                     {
@@ -256,8 +256,9 @@ namespace QLKTX
                     GioiTinh = "Nam";
                 if (rdonu.Checked == true)
                     GioiTinh = "Nữ";
+                //
                 //Insert vao CSDL
-                sql = "INSERT INTO tblSinhVien(MaSinhVien, TenSinhVien, NgaySinh, GioiTinh, MaQue, MaKhoa, MaLop, Anh) VALUES(";
+                sql = "INSERT INTO tblSinhVien(MaSV, TenSinhVien, NgaySinh, GioiTinh, MaQue, MaKhoa, MaLop, Anh) VALUES(";
                 sql += "'" + txtMSV.Text + "',N'" + txtHoten.Text + "','" + dtpngaysinh.Value.ToString("MM/dd/yyyy") + "'" +
                     ",N'" + GioiTinh + "','" + cbxmaque.SelectedValue.ToString() + "','" + cbxmakhoa.SelectedValue.ToString() + "','" + cbxmalop.SelectedValue.ToString() + "','" + imageName + "')";
                 MessageBox.Show("Thêm thành công", "Thông báo");
@@ -273,7 +274,7 @@ namespace QLKTX
             {
                 sql = "Update tblSinhVien SET TenSinhVien =N'" + txtHoten.Text + "',NgaySinh='" + dtpngaysinh.Value.ToString("MM/dd/yyyy") + "'" +
                      ",GioiTinh=N'" + Gioitinh + "',MaQue='" + cbxmaque.SelectedValue.ToString() + "'," +
-                     "MaKhoa='" + cbxmakhoa.SelectedValue.ToString() + "',MaLop='" + cbxmalop.SelectedValue.ToString() + "',Anh='" + imageName + "' Where MaSinhVien='" + txtMSV.Text + "'";
+                     "MaKhoa='" + cbxmakhoa.SelectedValue.ToString() + "',MaLop='" + cbxmalop.SelectedValue.ToString() + "',Anh='" + imageName + "' Where MaSV='" + txtMSV.Text + "'";
                 dgvsinhvien.DataSource = database.DataReader(sql);
                 LoadData();
                 MessageBox.Show("Sửa thành công", "Thông báo");
@@ -281,7 +282,7 @@ namespace QLKTX
             //Nếu nút Xóa enable=true thì thực hiện xóa dữ liệu
             if (btnxoa.Enabled == true)
             {
-                sql = "Delete From tblSinhVien Where MaSinhVien ='" + txtMSV.Text + "'";
+                sql = "Delete From tblSinhVien Where MaSV ='" + txtMSV.Text + "'";
             }
             database.DataChange(sql);
             //Cap nhat lai DataGrid
@@ -339,4 +340,10 @@ namespace QLKTX
 
             }
         }
- }  }
+
+        private void bt_refesh_Click(object sender, EventArgs e)
+        {
+            btnthemmoi.Enabled = true;
+            LoadData();
+        }
+    }  }
