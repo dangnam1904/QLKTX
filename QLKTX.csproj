@@ -235,5 +235,8 @@
     <Content Include="bin\Debug\Image\AnhSV\8.jpg" />
     <Content Include="bin\Debug\Image\AnhSV\9.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,8 +10,7 @@ namespace QLKTX
     class Database
     {
         //Khai báo biến toàn cục, bạn phải thay đổi chuối kết nối phù hợp
-        string strConnect = "Data Source=DESKTOP-RT3QMVS;Initial Catalog=KTX;" +
-            "Integrated Security=True";
+        string strConnect = "Data Source=DESKTOP-K7LLBMD;Initial Catalog=KTX;Integrated Security=True";
         SqlConnection sqlConnect = null;
         //Phương thức mở kết nối
         public void OpenConnect()
